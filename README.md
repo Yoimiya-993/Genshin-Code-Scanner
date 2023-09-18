@@ -10,6 +10,6 @@
 
 
 
-**PS：本程序还是在用很low的抢码方式，像之前小86搞的30抽挑战赛都是被很牛的科技扫上的，哪种程序我写不出来。如果有厉害的大佬或了解这方面的欢迎**![image](https://github.com/Mr-Deng67/Genshin-QR/assets/52495231/689c2323-3da3-453f-adf8-fb8eb2c7b68b)
+**PS：本程序还是在用很low的抢码方式，像之前小86搞的30抽挑战赛都是被很牛的科技扫上的，那种程序我写不出来。如果有厉害的大佬或了解这方面的欢迎**![image](https://github.com/Mr-Deng67/Genshin-QR/assets/52495231/689c2323-3da3-453f-adf8-fb8eb2c7b68b)
 
 

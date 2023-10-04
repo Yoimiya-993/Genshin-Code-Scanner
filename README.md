@@ -8,10 +8,8 @@
 4. 运行程序`python Genshin_login_tool_cv2.py`
 
 ## 如果要打包成exe使用
-1. 最好用集成开发工具（如Pycharm）打开本项目
-2. 上述第3步在集成开发工具的“终端”选项卡中操作，使依赖包安装在项目虚拟环境（venv）中
-3. 在“终端”选项卡中安装pyinstaller，`pip install pyinstaller`
-4. 在“终端”选项卡中运行打包命令：`pyinstaller -F ./Genshin_login_tool_cv2.py`，即可在生成的`dist`目录下得到对应的exe文件
+1. 安装pyinstaller，`pip install pyinstaller`
+2. 运行打包命令：`pyinstaller -F ./Genshin_login_tool_cv2.py`，即可在生成的`dist`目录下得到对应的exe文件
 
 ## 米游社cookie的获取方式（以Chrome浏览器为例）
 1. 打开浏览器，进入无痕浏览模式

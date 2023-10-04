@@ -1,15 +1,24 @@
 # Genshin-QR
 原神直播抢码工具，识别屏幕上的二维码
 
-**参考 [wintersnowlc/Genshin_login_tool](https://github.com/wintersnowlc/Genshin_login_tool) 的代码，并进行了一些改进：**
-1. 使用了速度更快的截图库，从而提升了识别二维码的速度
-2. OpenCV库传入了微信扫码团队开源的神经网络模型文件，使其能够识别直播画面缩小时的二维码
-3. 将抢码逻辑由原代码的1万次for循环改为while True死循环，使得识别二维码的次数不受限制（适用于主播不断刷新二维码的情况）
-4. 将延迟登录由原来的随机数延迟改为用户自定义延迟秒数，支持输入小数，如输入1.5表示抢码成功后等待1.5秒再确认登录
-5. 确认登录这部分代码以创建新线程的方式执行，解决了由于用户设置的延迟登录秒数过久，而主播在不断刷新二维码，此时的程序在延迟登录而不去识别后续的二维码的问题
+## 使用方法
+1. 打开命令提示符（Win+R输入cmd回车），并将目录切换至项目文件夹下`cd [你的电脑保存本项目的文件夹路径]`
+2. 检查是否安装Python并配置好环境变量`python -V 和 pip -V`，返回版本号则表示成功
+3. 安装项目所需依赖包`pip install -r requirements.txt`
 
+## 如果要打包成exe
+a. 最好用集成开发工具（如Pycharm）打开本项目
+b. 上述第3步在集成开发工具的“终端”选项卡中操作，使依赖包安装在项目虚拟环境（venv）中
+c. 在“终端”选项卡中安装pyinstaller，`pip install pyinstaller`
+d. 在“终端”选项卡中运行打包命令：`pyinstaller -F ./Genshin_login_tool_cv2.py`，即可在生成的`dist`目录下得到对应的exe文件
 
+## 米游社cookie的获取方式（以Chrome为例）
+1. 打开浏览器，进入无痕浏览模式
+2. 访问[](https://user.mihoyo.com/)，登录
+3. 打开开发者模式（快捷键F12），点击`控制台/Console`选项卡
+4. 输入`document.cookie`回车，鼠标光标放到返回的内容上，右键->点“复制字符串内容”
+   示例图（因为我没有登录，所以返回的内容很短）：
+   ![image](https://github.com/Mr-Deng67/Genshin-QR/assets/52495231/9f7479e2-0c6d-4ac1-81c0-f42db187fdb0)
 
-**PS：本程序还是在用很low的抢码方式，像之前小86搞的30抽挑战赛都是被很牛的科技扫上的，那种程序我写不出来。如果有厉害的大佬或了解这方面的欢迎**![image](https://github.com/Mr-Deng67/Genshin-QR/assets/52495231/689c2323-3da3-453f-adf8-fb8eb2c7b68b)
-
-
+## 参考与感谢
+[wintersnowlc/Genshin_login_tool](https://github.com/wintersnowlc/Genshin_login_tool)

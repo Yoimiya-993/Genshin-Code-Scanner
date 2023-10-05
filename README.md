@@ -1,15 +1,15 @@
-# Genshin-QR
+# Genshin-Code-Scanner
 原神直播抢码工具，识别屏幕上的二维码
 
 ## 使用方法
 1. 打开命令提示符（Win+R输入cmd回车），并将目录切换至项目文件夹下`cd [你的电脑保存本项目的文件夹路径]`
 2. 检查是否安装Python并配置好环境变量`python -V 和 pip -V`，返回版本号则表示成功
 3. 安装项目所需依赖包`pip install -r requirements.txt`
-4. 运行程序`python Genshin_login_tool_cv2.py`
+4. 运行程序`python Genshin_login_tool.py`
 
 ## 如果要打包成exe使用
 1. 安装pyinstaller，`pip install pyinstaller`
-2. 运行打包命令：`pyinstaller -F ./Genshin_login_tool_cv2.py`，即可在生成的`dist`目录下得到对应的exe文件
+2. 运行打包命令：`pyinstaller -F ./Genshin_login_tool.py`，即可在生成的`dist`目录下得到对应的exe文件
 
 ## 米游社cookie的获取方式（以Chrome浏览器为例）
 1. 打开浏览器，进入无痕浏览模式

@@ -2,14 +2,16 @@
 原神直播抢码工具，识别屏幕上的二维码
 
 ## 使用方法
-1. 打开命令提示符（Win+R输入cmd回车），并将目录切换至项目文件夹下`cd [你的电脑保存本项目的文件夹路径]`
-2. 检查是否安装Python并配置好环境变量`python -V 和 pip -V`，返回版本号则表示成功
-3. 安装项目所需依赖包`pip install -r requirements.txt`
-4. 运行程序`python Genshin_login_tool.py`
+- 使用Python运行
+   1. 打开命令提示符（Win+R输入cmd回车），并将目录切换至项目文件夹下`cd [你的电脑保存本项目的文件夹路径]`
+   2. 检查是否安装Python并配置好环境变量`python -V 和 pip -V`，返回版本号则表示成功
+   3. 安装项目所需依赖包`pip install -r requirements.txt`
+   4. 运行程序`python Genshin_login_tool.py`
+- 直接下载[发行版](https://github.com/Mr-Deng67/Genshin-Code-Scanner/releases)
 
 ## region.txt说明
-这个文件用来设置扫描范围
-**只有里面的四个数字可以修改，其他字符不要去动**
+这个文件用来设置扫描范围  
+**只有里面的四个数字可以修改，其他字符不要去动**  
 四个数字的含义：预设的[1920, 1080, 250, 250]，即表示屏幕分辨率为1920x1080，扫描区域为以屏幕中心宽250高250的正方形区域
 
 ## 米游社cookie的获取方式（以Chrome浏览器为例）

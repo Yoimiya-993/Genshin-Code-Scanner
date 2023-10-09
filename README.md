@@ -7,9 +7,10 @@
 3. 安装项目所需依赖包`pip install -r requirements.txt`
 4. 运行程序`python Genshin_login_tool.py`
 
-## 如果要打包成exe使用
-1. 安装pyinstaller，`pip install pyinstaller`
-2. 运行打包命令：`pyinstaller -F ./Genshin_login_tool.py`，即可在生成的`dist`目录下得到对应的exe文件
+## region.txt说明
+这个文件用来设置扫描范围
+**只有里面的四个数字可以修改，其他字符不要去动**
+四个数字的含义：预设的[1920, 1080, 250, 250]，即表示屏幕分辨率为1920x1080，扫描区域为以屏幕中心宽250高250的正方形区域
 
 ## 米游社cookie的获取方式（以Chrome浏览器为例）
 1. 打开浏览器，进入无痕浏览模式
